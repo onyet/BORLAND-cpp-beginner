@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <iostream.h>
+#include <conio.h>
+
+void main(){
+	int a, b, c, d, e;
+
+   cout << "mencari bilangan terbesar dari 5 bilangan" << endl;
+   cout << "masukan bilangan 1: ";
+   cin >> a;
+
+   cout << "masukan bilangan 2: ";
+   cin >> b;
+
+   cout << "masukan bilangan 3: ";
+   cin >> c;
+
+   cout << "masukan bilangan 4: ";
+   cin >> d;
+
+   cout << "masukan bilangan 5: ";
+   cin >> e;
+
+	if (a > b && a > c && a > d && a > e) {
+
+		cout << "Bilangan Terbesar BIL-1: " << a;
+
+	} else if (b > a && b > c && b > d && b > e) {
+
+		cout << "Bilangan Terbesar BIL-2: " << b;
+
+   } else if (c > a && c > b && c > d && c > e) {
+
+		cout << "Bilangan Terbesar BIL-3: " << c;
+
+   } else if (d > a && d > b && d > c && d > e) {
+
+		cout << "Bilangan Terbesar BIL-4: " << d;
+
+	} else {
+
+		cout << "Bilangan Terbesar BIL-5: " << e;
+
+	}
+   getch();
+}

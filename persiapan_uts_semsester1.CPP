@@ -1,0 +1,27 @@
+#include <stdio>
+#include <conio>
+#include <iostream>
+#include <math>
+
+void main(){
+
+	int bil[7], x, terbesar = 0;
+
+   for (x = 0; x < 7; x++ ) {
+
+      cout << "Bilangan " << x + 1 << ": ";
+   	cin >> bil[x];
+
+      if(bil[x] > terbesar) {
+
+      	terbesar = bil[x];
+
+      }
+
+   }
+
+   cout << "Bilangan Terbesar : " << terbesar << endl;
+
+   getch();
+
+}

@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <conio.h>
+#include <iostream.h>
+
+void main(){
+
+	clrscr();
+
+   for(int baris = 1; baris <= 4; baris++){
+
+   	if(baris%2 == 0){ // modulus (%) -> menghitung sisa bagi
+
+      	for(int kolom = 5; kolom >= 1; kolom--){
+
+         	cout << kolom << " ";
+
+      	}
+
+      } else {
+
+      	for(int kolom = 1; kolom <= 5; kolom++){
+
+         	cout << kolom << " ";
+
+      	}
+
+      }
+
+      cout << endl;
+
+   }
+
+   getch();
+
+}

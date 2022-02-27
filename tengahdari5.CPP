@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <iostream.h>
+#include <conio.h>
+
+void main(){
+	int a, b, c, d, e;
+
+   cout << "mencari bilangan tengah dari 5 bilangan" << endl;
+   cout << "masukan bilangan 1: ";
+   cin >> a;
+
+   cout << "masukan bilangan 2: ";
+   cin >> b;
+
+   cout << "masukan bilangan 3: ";
+   cin >> c;
+
+   cout << "masukan bilangan 4: ";
+   cin >> d;
+
+   cout << "masukan bilangan 5: ";
+   cin >> e;
+
+	if ((a > b && a > c && a < d && a < e) || (a > d && a > c && a < b && a < e) || (a < b && a < c && a > d && a > e)) {
+
+   	cout << "Bilangan Tengah BIL-1: " << a;
+
+	} else if ((b > a && b > c && b < d && b < e) || (b > d && b > c && b < a && b < e) || (b < a && b < c && b > d && b > e)) {
+
+   	cout << "Bilangan Tengah BIL-2: " << b;
+
+   } else if ((c > b && c > a && c < d && c < e) || (c > d && c > a && c < b && c < e) || (c < b && c < a && c > d && c > e)) {
+
+   	cout << "Bilangan Tengah BIL-3: " << c;
+
+	} else if ((d > b && d > a && d < c && d < e) || (d > c && d > a && d < b && d < e) || (d < b && d < a && d > c && d > e)) {
+
+   	cout << "Bilangan Tengah BIL-4: " << d;
+
+	} else {
+
+   	cout << "Bilangan Tengah BIL-5: " << e;
+
+	}
+
+   getch();
+}

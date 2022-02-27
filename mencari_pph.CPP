@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <conio.h>
+#include <iostream.h>
+#include <math.h>
+
+void main(){
+
+	char nama[10];
+   double gaji, tunjangan;
+   int penghasilan, pph, penghasilanbersih, jenispph;
+
+   pph = 0;
+
+	cout << "||======================================================||" << endl;
+   cout << "||             MENGHITUNG PPH KARYAWAN                  ||" << endl;
+   cout << "||======================================================||" << endl;
+
+   cout << "|| Masukan Nama [max 10 char] : ";
+   cin >> nama;
+
+   cout << "|| Masukan Gaji       [angka] : ";
+   cin >> gaji;
+
+   cout << "|| Masukan Tunjangan  [angka] : ";
+   cin >> tunjangan;
+
+   penghasilan = gaji + tunjangan;
+
+   if(penghasilan > 10000000){
+
+   	pph = penghasilan * 0.05;
+      jenispph = 5;
+
+   } else {
+
+   	if(penghasilan < 10000000){
+
+      	pph = penghasilan * 0.03;
+         jenispph = 3;
+
+      }
+      //jangan pakai else atau pph yang di bawah 5 juta ga nampil
+      if(penghasilan < 5000000){
+
+      	pph = penghasilan * 0.02;
+         jenispph = 2;
+
+      }
+
+   }
+
+   penghasilanbersih = penghasilan - pph;
+
+   cout << "|| Penghasilan Anda           : " << penghasilan << endl;
+   cout << "|| pph " << jenispph << "%                     : " << pph << endl;
+   cout << "|| Penghasilan Bersih         : " << penghasilanbersih << endl;
+
+	getch();
+
+}
