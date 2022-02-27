@@ -1,0 +1,7 @@
+file(READ ../src/geoflow/common.hpp s1)
+file(READ ../src/geoflow/parameters.hpp s2)
+file(READ ../src/geoflow/geoflow.hpp s3)
+string(CONCAT GF_SHARED_HEADERS ${s1} ${s2} ${s3})
+string(MD5 GF_SHARED_HEADERS_HASH ${GF_SHARED_HEADERS})
+message(STATUS "Setting Geoflow shared header hash to ${GF_SHARED_HEADERS_HASH}")
+file(WRITE ${OUTPUT_FILE} "#define GF_SHARED_HEADERS_HASH \"${GF_SHARED_HEADERS_HASH}\"\n")
